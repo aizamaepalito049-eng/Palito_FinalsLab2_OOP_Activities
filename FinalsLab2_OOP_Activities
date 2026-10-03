@@ -3,7 +3,7 @@ class BookPages:
         self.pages = pages
 
     def __str__(self):
-        return f"{self.pages} pages"
+        return str(self.pages) + " pages"
 
     def __add__(self, other):
         return BookPages(self.pages + other.pages)
